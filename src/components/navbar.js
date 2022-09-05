@@ -64,7 +64,7 @@ const links = [
               
              
        </div>
-      
+     
         <div id ="right-section" ref = {currentState}>
 
         {match   &&  (<ul id="resource">
@@ -79,12 +79,12 @@ const links = [
                   </li>
              </a>
 
-               ))}
+             ))}
            
             </ul>
  )}
        
-       {( !match && !actiVate) &&(<img id ="hamburger" src = "./assests/hamburger.png" alt="menu" onClick = {handleClick}/>)}
+       {( !match && !actiVate) &&(<img id ="hamburger" src = "./sumya/assests/Hamburger.png" alt="menu" onClick = {handleClick}/>)}
               
     {(!match && actiVate) && (<img id = "close_menu" src = "./assests/close.png" alt = "close" onClick = {handleClick} />)}
 
