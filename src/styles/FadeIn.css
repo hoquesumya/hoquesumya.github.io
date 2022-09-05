@@ -1,0 +1,33 @@
+
+
+.fade-in{
+
+  /*opacity:1; */
+  animation:fadein 3s both;
+
+}
+
+.fade-out{
+
+  opacity:0;
+  transition: opacity 3s ease;
+
+}
+
+@keyframes fadein{
+
+ 0%{
+
+    opacity:1;
+    transform:translateX(-50px);
+
+  }
+
+
+100%{
+
+  opacity:1;
+  transform: translateY(0px);
+}
+
+}

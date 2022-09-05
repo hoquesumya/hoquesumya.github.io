@@ -1,0 +1,129 @@
+
+import React, {useState,useEffect,useRef} from 'react'
+import '../styles/navbar.css'
+
+export default function Navbar (){
+ 
+  
+   /* const handleScroll = (event) =>{
+
+   // event.preventDefault();
+    const curPos = window.pageYOffset;
+    setPos (curPos);
+
+  }
+
+ useEffect(() => {
+
+   window.addEventListener ('scroll', handleScroll);
+   return () =>{
+      window.removeEventListener ('scroll', handleScroll);
+
+   };
+
+
+});*/
+ 
+const [match,setMatch]= useState( window.matchMedia("(min-width: 768px)").matches);
+const [actiVate, setActiVate] = useState(false);
+const currentState = useRef(false);
+
+useEffect(()=>{
+
+ window.matchMedia("(min-width:786px)").addEventListener('cahnge', e => setMatch(e.match));
+
+},[]);
+
+const handleClick =() =>{
+
+ setActiVate(!actiVate);
+ currentState.current(actiVate);
+
+}
+  
+const resources = ["About", "Projects", "Resume"];
+  
+const links = [
+   "#about-section" , 
+   "https://github.com/hoquesumya" ,
+    "./assests/Sumya_Resume_August.docx (1).pdf" 
+
+    ]
+   return(
+   
+     <div className="nav-bar">
+       
+       <div id= "left-section">
+        
+         <a href = "/ ">
+            <button id = "text" > SH </button>
+       
+        </a>
+         
+             
+       </div>
+      
+        <div id ="right-section" ref = {currentState}>
+
+         {match &&(<ul id="resource">
+
+               {resources.map((item,index) =>(
+                    
+                     <a href = {links[index]}  key = {index}>
+                
+                   <li key ={index}>
+                       {item}
+                  </li>
+               </a>
+
+               ))}
+           
+            </ul>
+        )}
+       
+       {(!match && !actiVate) &&(<img id ="hamburger" src = "./assests/hamburger.png" alt="menu" onClick = {handleClick}/>)}
+        
+       {(!match && actiVate) && (
+
+           
+        <div id ="Show_list"> 
+
+           <ul id="resource1">
+
+               {resources.map((item,index) =>(
+                    
+                     <a href = {links[index]}  key = {index}>
+                    
+                  <button>
+                
+                   <li key ={index}>
+                       {item}
+                  </li>
+                <button>
+               </a>
+
+               ))}
+           
+            </ul>
+
+         
+        </div>
+        
+         )}
+       
+
+        </div>
+
+  
+      
+  
+
+     </div>
+
+  
+
+ )
+
+
+
+}

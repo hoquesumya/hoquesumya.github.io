@@ -1,0 +1,142 @@
+.main_about{
+
+   display:flex;
+   flex-direction: row;
+   
+
+
+}
+
+.about {
+
+  padding-left:20%;
+  min-height:70vh;
+  line-height:80%;
+
+
+}
+
+h1{
+ font-size:50px;
+ font-family:'Dancing Script',cursive;
+ 
+
+
+}
+#image{
+
+width:100%;
+border-radius:10%;
+
+}
+
+#about_des{
+  max-width:600px;
+  justify-content:center;
+  color:#5b3926;
+  font-family:'Fira code', monospace;
+  font-size:20px;
+  line-height:normal;
+}
+#about_des ul{
+ 
+ list-style-type:none;
+ display:grid;
+ grid-template-columns: repeat(2, minmax(150px, 10px));
+ 
+}
+#about_des li{
+ 
+padding-left:20px;
+position:relative;
+
+}
+#about_des li::before{
+ 
+  content: "\2730";
+  color: black;
+  left:0;
+  position:absolute; 
+  font-size:20px;
+}
+#my_image{
+
+ width:20%
+
+}
+
+@media only screen and (max-width:1100px){
+
+  #about_des{
+   max-width:400px;
+   text-align:justify;
+  }
+ #my_image{
+   padding-left:50px;
+
+  }
+
+
+}
+
+@media only screen and (max-width:1100px){
+
+  #about_des{
+   max-width:400px;
+   text-align:justify;
+  }
+ #my_image{
+   padding-left:50px;
+
+  }
+
+
+}
+@media only screen and (max-width:700px){
+
+  #about_des{
+  /* max-width:400px;*/
+   /*text-align:justify;*/
+   padding-right:20px;
+   padding-left:20px;
+  }
+ #my_image{
+   opacity:0;
+
+  }
+
+
+}
+
+@media only screen and (max-width:499px){
+
+  .about{
+    padding-right:10%;
+    padding-left:10%;
+
+
+   }
+  #about_des{
+  max-width:300px;
+     font-size:15px;
+   padding-left:8px;
+     }
+#about_des li{
+    padding-left:0px;
+    font-size:13px;
+   }
+#about_des li::before{
+  left:-12px;
+  font-size:15px;
+}
+ #my_image{
+   opacity:0;
+   
+
+  }
+.main_about{
+
+   flex-direction:column;
+     }
+
+}
