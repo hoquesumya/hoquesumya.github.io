@@ -1,7 +1,7 @@
 
    {
     
-   "homepage":"https://hoquesumya.github.io",
+   "homepage":"https://hoquesumya.github.io/sumya",
    "name": "sumya-ho",
   
    "version": "0.1.0",
@@ -58,7 +58,7 @@
   
      
     "predeploy":" npm run build",
-     "deploy":"gh-pages -b master  -d build",   
+     "deploy":"gh-pages -d build",   
    "start": "react-scripts start",
   
      
