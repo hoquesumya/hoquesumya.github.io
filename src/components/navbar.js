@@ -38,24 +38,30 @@ const handleClick =() =>{
 }
   
 const resources = ["About", "Projects", "Resume"];
+const [refresh, setRefresh] = useState(false);
+
   
 const links = [
    "#about-section" , 
    "https://github.com/hoquesumya" ,
-    "./assests/Sumya_Resume_August.docx (1).pdf" 
+    "./assests/Sumya_Resume_August.docx.pdf" 
 
     ]
+   const handleRefresh = () =>{
+        setRefresh(true);
+        window.location.reload();
+
+    }
    return(
    
      <div className="nav-bar">
        
        <div id= "left-section">
         
-         <a href = "/ ">
-            <button id = "text" > SH </button>
-       
-        </a>
          
+           <button id = "text" onClick = {handleRefresh}> SH </button>
+       
+              
              
        </div>
       
