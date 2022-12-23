@@ -15,8 +15,8 @@ const tech_list = ["C","C++","Python","Java","React.js","Html & CSS"];
           <div className = "main_about">
                          
              <div id = "about_des">
-                <p> I am currently a third-year computer science student at Columbia University. I earned my A.S in Computer Sciene from City University of New York with honors. </p>
-              <p> Here is a few technologies I have been working with: </p>
+                <p> I am currently a third-year Computer Science student at Columbia University. I graduted from City University of New York with A.S in Computer Science.<br/> Besides of studying, I love to read books and explore new placesand cook new foods in my free times. I am also fond of working out, lifting weights. </p>
+                    <p> Here is a few technologies I have been working with: </p>
 
 
               <ul className = "technologies">
