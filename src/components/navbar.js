@@ -84,7 +84,7 @@ const links = [
             </ul>
  )}
        
-       {( !match && !actiVate) &&(<img id ="hamburger" src = "./sumya/assests/Hamburger.png" alt="menu" onClick = {handleClick}/>)}
+       {( !match && !actiVate) &&(<img id ="hamburger" src = "./assests/Hamburger.png" alt="menu" onClick = {handleClick}/>)}
               
     {(!match && actiVate) && (<img id = "close_menu" src = "./assests/close.png" alt = "close" onClick = {handleClick} />)}
 
