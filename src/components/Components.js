@@ -5,7 +5,7 @@ import SideBar from './sidebar'
 import {BodyElement} from './Body'
 import {Footer} from './Footer'
 
-
+/*to view image from local host we need to use ./sumya/assests/Octocat.png because we created a directory named sumya while publishing the website to Github*/
 export const Components = () =>{
 
    const imgSrc = ["./assests/Octocat.png" , "./assests/linkdln.png"];
