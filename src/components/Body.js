@@ -7,7 +7,7 @@ export const BodyElement = () => {
  return(
   <div className = "main">
     <Introduction />
-     <About image = "./assests/Sumya.jpeg" />
+    <About image = "./assests/Sumya.jpeg" />       
   </div>
 
  );
