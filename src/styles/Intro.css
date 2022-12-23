@@ -42,8 +42,11 @@ h3 {
   padding-top:12rem;
   min-height:100vh;
   font-family: 'Dancing Script', cursive;
-   background:linear-gradient(#a18cd1,#fbc2eb);
-   -webkit-background-clip:text; 
+  background: #a18cd1; /* will fall into old browser*/
+  background:linear-gradient(#a18cd1,#fbc2eb);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(#a18cd1, #fbc2eb); /* Chrome 10-25, Safari 5.1-6 */
+    -webkit-background-clip:text; 
+    background-clip:text;
 }
 canvas{
  width:200px !important
