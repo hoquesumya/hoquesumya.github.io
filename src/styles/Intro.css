@@ -206,17 +206,18 @@ from {
    .Email{
 
      padding:18px 30px 18px 30px;
+     font-size: 15px;
 
     }
    #introduction{
      
-     padding-top:11rem;
+     padding-top:10rem;
      
    }
   #intro-description{
 
     padding-left:10px;
-    font-size:21px;
+    font-size:15px;
     
   }
   #intro-name,h3,.name{
