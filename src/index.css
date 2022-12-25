@@ -1,16 +1,9 @@
 body {
   margin: 0;
-   /*background: #a18cd1; /*old browser */
-   /*background: -moz-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
-  
-  background: -webkit-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
-  background: -o-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
-  background: -ms-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
-  background: linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));*/
-   background: #A18CD1;
+  /*  background: #A18CD1;
    background: -webkit-linear-gradient(top left, #A18CD1, #FBC2EC);
    background: -moz-linear-gradient(top left, #A18CD1, #FBC2EC);
-   background: linear-gradient(to bottom right, #A18CD1, #FBC2EC);
+   background: linear-gradient(to bottom right, #A18CD1, #FBC2EC);*/
     -webkit-background-clip: text;
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
