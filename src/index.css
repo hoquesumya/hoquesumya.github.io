@@ -2,11 +2,12 @@ body {
   margin: 0;
    background: #a18cd1; /*old browser */
    background: -moz-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
-  background: linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
+  
   background: -webkit-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));/* for iphone*/
   background: -o-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
   background: -ms-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
-    
+  background: linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a18cd1', endColorstr='#fbc2eb',GradientType=0 ); /* IE6-9 */
   -webkit-background-clip: text;
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
