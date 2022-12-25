@@ -1,8 +1,11 @@
 body {
   margin: 0;
    background: #a18cd1; /*old browser */
-  #background: linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
-  #background: -webkit-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));/* for iphone*/
+   background: -moz-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
+  background: linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
+  background: -webkit-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));/* for iphone*/
+  background: -o-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
+  background: -ms-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
     
   -webkit-background-clip: text;
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
