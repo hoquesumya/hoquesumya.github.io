@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background: linear-gradient(#a18cd1, #fbc2eb);
-  -webkit-background: linear-gradient(#a18cd1, #fbc2ed);/* for iphone*/
+  background: -webkit-linear-gradient(#a18cd1, #fbc2ed);/* for iphone*/
   background: #a18cd1; /*old browser */
 
   
