@@ -43,9 +43,14 @@
   flex-direction:row;
   font-family:'Fira code', monospace;
   #color:#2D283E;
+  /* Created with https://www.css-gradient.com */
+background: #A18CD1;
+background: -webkit-linear-gradient(top left, #A18CD1, #FBC2EC);
+background: -moz-linear-gradient(top left, #A18CD1, #FBC2EC);
+background: linear-gradient(to bottom right, #A18CD1, #FBC2EC);
   
-}
-
+};
+/* Created with https://www.css-gradient.com */
 .fade-in-section {
   opacity: 0;
   transform: translateY(10vh);
