@@ -1,8 +1,8 @@
 body {
   margin: 0;
    background: #a18cd1; /*old browser */
-  background: linear-gradient(#a18cd1, #fbc2eb);
-  background: -webkit-linear-gradient(#a18cd1, #fbc2ed);/* for iphone*/
+  background: linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));
+  background: -webkit-linear-gradient(rgba(161,140,209,2),rgba(251,194,237,1));/* for iphone*/
     
   -webkit-background-clip: text;
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
