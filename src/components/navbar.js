@@ -37,7 +37,7 @@ const handleClick =() =>{
 
 }
   
-const resources = ["About", "Projects", "Resume"];
+const resources = ["About", "Experience", "Projects"];
 const [refresh, setRefresh] = useState(false);
 
   

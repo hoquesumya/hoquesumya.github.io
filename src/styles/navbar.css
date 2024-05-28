@@ -3,12 +3,14 @@
    height:60px;
    display:flex;
    flex-direction:row;
+   border-bottom-color: #a18cd1;
+   border-bottom-style: dotted;
    justify-content:space-between;
-   position:fixed;
+   position:absolute;
    top:0px;
    left:0px;
    right:0px;
-   background-color:#4C495D;
+   background-color:transparent;
    z-index:100;
 
 
@@ -45,9 +47,9 @@
 
 }
 #right-section li{
- color:#D1D7E0;
+ color:#5b3629;
  font-family: 'Fira code', monospace;
- font-size:17px;
+ font-size:15px;
 }
 
 

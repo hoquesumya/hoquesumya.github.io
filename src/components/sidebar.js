@@ -1,6 +1,7 @@
 
 import React from 'react'
 import '../styles/sidebar.css'
+import Sparkle from 'react-sparkle'
 export default function SideBar({imgSrc, url}) {
 
 
@@ -15,6 +16,20 @@ const toolTipName = {
  return(
 
     <div className = "side-bar">
+
+<Sparkle 
+    color={'#FFF'}
+    count={1000}
+    minSize={0.5}
+    maxSize={1}
+    overflowPx={1}
+    fadeOutSpeed={50}
+    newSparkleOnFadeOut={true}
+    flicker={true}
+    flickerSpeed={'normal'}
+    top={-20}
+    />
+
 
        { imgSrc.map((item,index) =>(
 

@@ -1,26 +1,4 @@
 
-/*.type::before{
-
-  content:'printf(" ';
-  font-size:20px;
-  color:#A9BA9D;
-  position:absolute;
-  margin-left:-2rem;
-  margin-top:-2rem;
-
-}
-
-.type2::after{
-
-  content:' ")';
-  font-size:20px;
-  color:#A9BA9D;
-  position:absolute;
-  margin-top:-2rem;
-  margin-left:-2rem;
-
-
-}*/
 
 h3 {
 
@@ -249,4 +227,38 @@ from {
   }
 
  }
+ #rose{
+  left:59.7%;
+  position: absolute;
+  top:24%;
+  transform: rotate(30deg);
+  width: 10%;
+ }
+ #roseT {
+  width: 100%;
+  opacity: 0.2;
+  animation: moveToLeft 5s;
+  transform-style: preserve-3d;
+}
 
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 0.6;
+    transform: rotate3d(1, 1, 0, 180deg) translateZ(50px); /* Rotate around a diagonal axis in 3D space and add depth */
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotate3d(1, 1, 0, -180deg) translateZ(-50px); /* Rotate back around the diagonal axis in 3D space and add depth */
+  }
+  75% {
+    opacity: 0.4;
+    transform: scale(3.33) translateZ(0); /* Scale the element */
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1) translateY(0) translateZ(0); /* Reset transformations */
+  }
+}
