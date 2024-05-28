@@ -11,7 +11,6 @@ export const Introduction = () =>{
   
      <div id = "introduction">  
      
-
       <section> 
          <div id = "intro-name">
             
@@ -20,7 +19,7 @@ export const Introduction = () =>{
                onInit = { (typewriter) =>{
                   typewriter
                         
-                        .typeString(' <h3>Hi, </h3>')
+                        .typeString(' <h3 style="font-size:50%;">Hi, </h3>')
                         .typeString(
                            ' <br><span class = type1">I am <span class = "name"> <span id ="toogle" >S</span><span id="toogle">u</span><span id= "toogle">m</span><span id = "toogle">y</span><span id ="toogle">a</span></span>.</span>' 
                         )

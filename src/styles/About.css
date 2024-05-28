@@ -35,30 +35,10 @@ border-radius:10%;
   justify-content:center;
   color:#5b3926;
   font-family:'Fira code', monospace;
-  font-size:20px;
+  font-size:15px;
   line-height:normal;
 }
-#about_des ul{
- 
- list-style-type:none;
- display:grid;
- grid-template-columns: repeat(2, minmax(150px, 10px));
- 
-}
-#about_des li{
- 
-padding-left:20px;
-position:relative;
 
-}
-#about_des li::before{
- 
-  content: "\2730";
-  color: black;
-  left:0;
-  position:absolute; 
-  font-size:20px;
-}
 #my_image{
 
  width:20%
@@ -118,17 +98,11 @@ position:relative;
    }
   #about_des{
   max-width:300px;
-     font-size:15px;
+  font-size:15px;
    padding-left:8px;
      }
-#about_des li{
-    padding-left:0px;
-    font-size:13px;
-   }
-#about_des li::before{
-  left:-12px;
-  font-size:15px;
-}
+
+
  #my_image{
    opacity:0;
    
@@ -140,3 +114,65 @@ position:relative;
      }
 
 }
+.skills{
+  padding: 30px;
+}
+.section-title h3::after{
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(204,20,175,0.8772102591036415) 0%, rgba(102,26,87,1) 35%);
+  display: inline-block;
+  margin: 4px 10px;
+  font-weight: bold;
+}
+
+.skills .progress-bar-wrap{
+  background: rgb(255 255 255 / 21%);
+}
+.skill{
+  padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color:#5b3926;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  background: linear-gradient(270deg, #73089d, #d24446);
+  animation: reveal 3s forwards;
+}
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color:#5b3926;
+}
+@keyframes reveal{
+    0% {
+      -webkit-clip-path: inset(0 100% 0 0);
+      clip-path: inset(0 100% 0 0);
+    }
+   100% {
+      -webkit-clip-path: inset(0 0 0 0);
+      clip-path: inset(0 0 0 0);
+    }
+  }
