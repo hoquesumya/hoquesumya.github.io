@@ -1,10 +1,12 @@
-
+:root {
+  --spacer: 1rem; /* Define your base spacing unit */
+}
 .main{
     min-width:100vw;
    overflow-x:hidden;
    overflow-y:hidden;
+  /* padding-left:9rem !important;
+   padding-right:2rem !important*/
   /* background-color:;*/
    
-
 }
-

@@ -89,9 +89,9 @@
 }
 #Show_list{
 
-position:fixed;
-left:0px;
-top:46px;
+position:relative;
+left:60px;
+top:60px;
 right:0px;
 z-index:300;
 
@@ -113,9 +113,11 @@ justify-content:space-between;
 /* display:block;*/
  width:100%;
  padding:20px;
- background-color:#4C495D;
+ background-color:transparent;
  display:flex;
- justify-content:center;;
+ justify-content:center;
+ border-radius: 20px;
+ border-top: black;
   
 
 }

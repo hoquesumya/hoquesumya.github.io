@@ -3,7 +3,7 @@ import React, {useState,useEffect,useRef} from 'react'
 import '../styles/navbar.css'
 /*import CloseIcon from '@mui/icons-material/Close';*/
 
-export default function Navbar (){
+export default function Navbar ({setActiveState}){
  
 const queries = {
  sm: '(min-width: 1000px)',
@@ -44,11 +44,11 @@ const [refresh, setRefresh] = useState(false);
 const links = [
    "#about-section" , 
    "https://github.com/hoquesumya" ,
-    "./assests/Sumya_Resume_August.docx.pdf" 
 
     ]
    const handleRefresh = () =>{
         setRefresh(true);
+        setActiveState("Home")
         window.location.reload();
 
     }
@@ -60,8 +60,6 @@ const links = [
         
          
            <button id = "text" onClick = {handleRefresh}> SH </button>
-       
-              
              
        </div>
      
@@ -72,9 +70,9 @@ const links = [
                
                 {resources.map((item,index) =>(
                     
-                    <a href = {links[index]}  key = {index}>
+                    <a className = "nav-link" href = {links[index]}  key = {index}>
                 
-                   <li key ={index}>
+                   <li key ={index} onClick={() => setActiveState(item)}>
                        {item}
                   </li>
              </a>
@@ -96,13 +94,12 @@ const links = [
           <ul id = "resource1">
                {resources.map((item,index) =>(
                 
-                     <a href = {links[index]}  key = {index}> 
-                     <button>              
-                   <li key ={index}>
-                       {item}
-                  </li>
-                  </button>
-                   </a>
+                        <button  onClick={() => setActiveState(item)}>              
+                            <li key ={index}>
+                                {item}
+                            </li>
+                        </button>
+                  
  
 
                ))}

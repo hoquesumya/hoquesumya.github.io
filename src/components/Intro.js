@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import '../styles/Intro.css'
 import Typewriter from 'typewriter-effect'
+import Sparkle from 'react-sparkle'
 export const Introduction = () =>{
    const [nameTyped, setNameTyped] = useState(false);
    const [introTyped, setIntroTyped] = useState(false);
@@ -9,8 +10,8 @@ export const Introduction = () =>{
   
   return(
   
-     <div id = "introduction">  
-     
+     <div id = "introduction"> 
+ 
       <section> 
          <div id = "intro-name">
             
@@ -32,6 +33,19 @@ export const Introduction = () =>{
             />
             {rose && (<div id = "rose">
                <img id="roseT" src='sumya/assests/roseT.png'></img>
+
+         <Sparkle 
+    color={'#ebf054'}
+    count={500}
+    minSize={2}
+    maxSize={5}
+    overflowPx={50}
+    fadeOutSpeed={50}
+    newSparkleOnFadeOut={true}
+    flicker={true}
+    flickerSpeed={'normal'}
+    />
+
 
             </div>)}
          </div>

@@ -18,11 +18,11 @@ const toolTipName = {
     <div className = "side-bar">
 
 <Sparkle 
-    color={'#FFF'}
+    color={'#fff'}
     count={1000}
-    minSize={0.5}
-    maxSize={1}
-    overflowPx={1}
+    minSize={1}
+    maxSize={3}
+    overflowPx={50}
     fadeOutSpeed={50}
     newSparkleOnFadeOut={true}
     flicker={true}

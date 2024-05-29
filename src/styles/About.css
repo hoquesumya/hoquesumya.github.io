@@ -6,14 +6,21 @@
 
 
 }
+.container {
+  margin: 0 !important;
+}
 
 .about {
 
-  padding-left:20%;
+  padding-left:15%;
   min-height:70vh;
   line-height:80%;
-
-
+}
+.about_temp{
+  padding-left:15%;
+  min-height:70vh;
+  line-height:80%;
+  padding-top: 5rem;
 }
 
 h1{
@@ -114,9 +121,7 @@ border-radius:10%;
      }
 
 }
-.skills{
-  padding: 30px;
-}
+
 .section-title h3::after{
   content: "";
   width: 120px;
@@ -132,7 +137,7 @@ border-radius:10%;
   background: rgb(255 255 255 / 21%);
 }
 .skill{
-  padding: 10px 0;
+    padding: 10px 0;
     margin: 0;
     text-transform: uppercase;
     display: block;
@@ -148,8 +153,18 @@ border-radius:10%;
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  background: linear-gradient(270deg, #73089d, #d24446);
   animation: reveal 3s forwards;
+}
+.progress-0{
+  background: linear-gradient(270deg, #73089d, #d24446);
+}
+
+.progress-1{
+  background: linear-gradient(90deg, #ebf054, #d18f4d);
+}
+
+.progress-2{
+  background: linear-gradient(270deg, #732511, #5da3a4);
 }
 .skills .progress {
   height: 60px;
