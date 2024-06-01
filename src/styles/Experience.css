@@ -1,0 +1,129 @@
+.experience{
+    padding-left:15%;
+    min-height:70vh;
+}
+
+.experience_temp{
+    padding-left:15%;
+    min-height:70vh;
+    padding-top: 5rem;
+  }
+.experience .section-title h2{
+    font-size:50px;
+    font-family:'Dancing Script',cursive;
+}
+
+.experience .experience-item{
+    color:#5b3926;
+    font-family: 'Fira code', monospace;
+    font-weight: 200;
+    padding:0 0 20px 20px;
+    font-size: small;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 251, 251, 0.858);
+    position: relative;
+}
+
+.experience .experience-item h6{
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.experience .experience-item::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: linear-gradient(270deg, #73089d, #d24446);;
+    border: 2px solid #5b3926;
+
+}
+
+.experience_temp .experience-item::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: linear-gradient(270deg, #73089d, #d24446);;
+    border: 2px solid #5b3926;
+
+}
+
+
+.experience_temp .experience-item{
+    color:#5b3926;
+    font-family: 'Fira code', monospace;
+    font-weight: 200;
+    padding:0 0 20px 20px;
+    font-size: small;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 251, 251, 0.858);
+    position: relative;
+}
+
+.experience_temp .experience-item h6{
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.list li {
+    position: relative; 
+    list-style-type: none; /* Remove the default list marker */
+    padding-left: 0;
+    animation: slide-up 0.7s ease-out forwards; /* Apply the animation */
+   
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(20px); /* Start slightly below */
+         /* Fully transparent */
+         opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* End at the original position */
+     /* Fully visible */
+        opacity: 1;
+    }
+}
+
+.list li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.list li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.list li:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.list li:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.list li::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: -10px;
+    top: 15%;
+    background: linear-gradient(90deg, #ebf054, #d18f4d);
+    
+
+}

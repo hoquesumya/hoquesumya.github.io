@@ -2,6 +2,7 @@ import {React,useState} from 'react'
 import {Introduction} from './Intro'
 import '../styles/Body.css'
 import {About} from './About'
+import { Experience  } from './Experience'
 
 import Sparkle from 'react-sparkle'
 export const BodyElement = ({activeSection}) => {
@@ -30,6 +31,8 @@ export const BodyElement = ({activeSection}) => {
 
       
       <About image = "sumya/assests/Sumya.jpeg" activeState={activeSection}/>   
+
+      <Experience activeState={activeSection}> </Experience>  
       </> 
     )} 
 
@@ -49,7 +52,28 @@ export const BodyElement = ({activeSection}) => {
       top={-20}
       />
       
-      <About image = "sumya/assests/Sumya.jpeg" activeState={activeSection}/>   
+      <About image = "sumya/assests/Sumya.jpeg" activeState={activeSection}/> 
+
+      </> 
+    )} 
+
+{activeSection ==="Experience" && ( 
+      <>
+    
+      <Sparkle 
+      color={'#FFF'}
+      count={1000}
+      minSize={2}
+      maxSize={5}
+      overflowPx={1}
+      fadeOutSpeed={100}
+      newSparkleOnFadeOut={true}
+      flicker={true}
+      flickerSpeed={'normal'}
+      top={-20}
+      />
+      
+      <Experience  activeState={activeSection}/>   
       </> 
     )} 
    

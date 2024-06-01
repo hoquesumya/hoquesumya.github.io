@@ -43,7 +43,7 @@ const [refresh, setRefresh] = useState(false);
   
 const links = [
    "#about-section" , 
-   "https://github.com/hoquesumya" ,
+   "#experience-section" ,
 
     ]
    const handleRefresh = () =>{
