@@ -44,6 +44,7 @@ const [refresh, setRefresh] = useState(false);
 const links = [
    "#about-section" , 
    "#experience-section" ,
+   "#project_sec"
 
     ]
    const handleRefresh = () =>{

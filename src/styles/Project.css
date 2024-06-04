@@ -1,0 +1,75 @@
+.main-branch{
+    background: linear-gradient(270deg, #73089d, #d24446);
+    height: 55rem;
+    left: 35%;
+    position: relative;
+    width: 2%;
+    border-radius: 50%;
+
+}
+.project{
+    min-width: 70vh;
+    padding-left:15%;
+    min-height:70vh;
+    
+}
+
+.project .section-title h2{
+    font-size:50px;
+    font-family:'Dancing Script',cursive;
+}
+.sub-branch{
+    background:linear-gradient(270deg, #308687, #e7f308, #14021c);
+    border-radius: 5px;
+    height: 7px;
+    position: absolute;
+    left:1rem;
+   
+    width: 8rem;
+    z-index: 0;
+}
+
+
+.sub-branch:nth-child(1){
+    top: 4rem;
+  
+
+}
+
+.sub-branch:nth-child(2){
+
+    top: 25rem;
+ 
+
+}
+.sub-branch:nth-child(3){
+    top: 42rem;
+
+}
+
+
+#sub-project {
+    left: 5rem;
+    position: relative;
+    top: -6rem;
+    width: 22rem;
+    z-index: 200;
+  
+}
+#sub-project1{
+    left: 5rem;
+    position: relative;
+    top: -6rem;
+    width: 22rem;
+    z-index: 200;
+    
+}
+
+#sub-project2{
+    left: 5rem;
+    position: relative;
+    top: -6rem;
+    width: 22rem;
+    z-index: 200;
+    
+}

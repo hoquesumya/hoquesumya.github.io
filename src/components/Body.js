@@ -3,6 +3,7 @@ import {Introduction} from './Intro'
 import '../styles/Body.css'
 import {About} from './About'
 import { Experience  } from './Experience'
+import { Project } from './Project'
 
 import Sparkle from 'react-sparkle'
 export const BodyElement = ({activeSection}) => {
@@ -33,6 +34,7 @@ export const BodyElement = ({activeSection}) => {
       <About image = "sumya/assests/Sumya.jpeg" activeState={activeSection}/>   
 
       <Experience activeState={activeSection}> </Experience>  
+      <Project activeSection={activeSection}></Project>
       </> 
     )} 
 
