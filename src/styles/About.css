@@ -2,8 +2,6 @@
 
    display:flex;
    flex-direction: row;
-   
-
 
 }
 .container {
@@ -13,12 +11,12 @@
 .about {
 
   padding-left:15%;
-  min-height:70vh;
+  min-height:80vh;
   line-height:80%;
 }
 .about_temp{
   padding-left:15%;
-  min-height:70vh;
+  min-height:100vh;
   line-height:80%;
   padding-top: 5rem;
 }
@@ -189,3 +187,13 @@ border-radius:10%;
       clip-path: inset(0 0 0 0);
     }
   }
+
+  @media only screen and  (max-width: 600px) {
+
+    .about{
+     padding-left:10%;
+    }
+    .about_temp{
+      padding-left:10%;
+    }
+   }

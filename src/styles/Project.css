@@ -8,7 +8,6 @@
 
 }
 .project{
-    min-width: 70vh;
     padding-left:15%;
     min-height:70vh;
     
@@ -23,53 +22,255 @@
     border-radius: 5px;
     height: 7px;
     position: absolute;
-    left:1rem;
-   
     width: 8rem;
     z-index: 0;
 }
 
 
 .sub-branch:nth-child(1){
+    left:1rem;
     top: 4rem;
-  
 
 }
 
 .sub-branch:nth-child(2){
+    left:1rem;
 
     top: 25rem;
  
 
 }
 .sub-branch:nth-child(3){
+    left:1rem;
     top: 42rem;
 
 }
 
+.sub-branch:nth-child(4){
+    left: -7.5rem;
+    top: 10rem;
 
-#sub-project {
+}
+
+.sub-branch:nth-child(5){
+    left: -8rem;
+    top: 30rem;
+}
+
+.sub-project0 {
     left: 5rem;
     position: relative;
     top: -6rem;
     width: 22rem;
     z-index: 200;
+    overflow: hidden;
   
 }
-#sub-project1{
+.sub-project1{
     left: 5rem;
     position: relative;
     top: -6rem;
     width: 22rem;
     z-index: 200;
+    overflow: hidden;
     
 }
 
-#sub-project2{
+
+.sub-project2{
     left: 5rem;
     position: relative;
     top: -6rem;
     width: 22rem;
     z-index: 200;
+    overflow: hidden;
+    
+}
+
+.sub-project3{
+    left: -19rem;
+    position: relative;
+    top: -6rem;
+    width: 22rem;
+    z-index: 200;
+    overflow: hidden;
+    
+}
+
+.sub-project4{
+    left: -19rem;
+    position: relative;
+    top: -6rem;
+    width: 22rem;
+    z-index: 200;
+    overflow: hidden;
+    
+}
+.button{
+    position: relative;
+    opacity:0;
+    z-index:300;
+    top:-7rem;
+    left:30%;
+    color:rgb(124, 25, 25);
+    background-color: #FBC2EC;
+    width:40%;
+    font-size: 10px;
+    border-radius: 20px;
+    font-family:'Dancing Script',cursive;
+   text-align: center;
+   transition: all 0.5s ease 0s;
+}
+
+.button-temp{
+    position: relative;
+    opacity:1;
+    z-index:300;
+    top:-7rem;
+    left:30%;
+    color:rgb(124, 25, 25);
+    background-color: #FBC2EC;
+    width:40%;
+    font-size: 10px;
+    border-radius: 20px;
+    font-family:'Dancing Script',cursive;
+   text-align: center;
+   transition: all 0.5s ease 0s;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1200px) {
+    .main-branch {
+        width: 2%;
+        left: 40%;
+    }
+
+    .project .section-title h2 {
+        font-size: 40px;
+    }
+
+    .sub-branch {
+        width: 5rem;
+    }
+
+    .sub-branch:nth-child(4){
+        left:-4.5rem;
+    
+    }
+    
+    .sub-branch:nth-child(5){
+        left: -4.5rem;
+    }
+
+    .sub-project0, .sub-project1, .sub-project2 {
+        left: 4rem;
+        width: 20rem;
+    }
+
+    .sub-project3, .sub-project4 {
+        width: 20rem;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+    .main-branch {
+        width: 2%;
+        left: 38%;
+        padding-right: 2px;
+    }
+
+
+    .project .section-title h2 {
+        font-size: 40px;
+    }
+
+    .sub-branch {
+        width: 5rem;
+    }
+
+
+    .sub-branch:nth-child(1){
+        left:0rem;
+    }
+    
+    .sub-branch:nth-child(2){
+        left:0rem;
+    }
+    .sub-branch:nth-child(3){
+        left:0rem;
+    
+    }
+
+    .sub-branch:nth-child(4){
+        left:-4.5rem;
+    }
+    
+    .sub-branch:nth-child(5){
+        left: -4.5rem;
+    }
+
+    .sub-project0, .sub-project1, .sub-project2 {
+        left: 4rem;
+        width: 15rem;
+        top:-4rem
+    }
+
+    .sub-project3, .sub-project4 {
+        left:-14rem;
+        width: 15rem;
+        top:-4rem
+    }
+    
+}
+
+
+@media only screen and  (max-width: 600px) {
+    .main-branch {
+        left: 40%;
+    }
+
+    .project{
+        padding-left: 10%;
+    }
+    .project .section-title h2 {
+        font-size: 40px;
+    }
+
+    .sub-branch {
+        width: 2rem;
+    }
+
+
+    .sub-branch:nth-child(1){
+        left:0rem;
+    }
+    
+    .sub-branch:nth-child(2){
+        left:0rem;
+    }
+    .sub-branch:nth-child(3){
+        left:0rem;
+    
+    }
+
+    .sub-branch:nth-child(4){
+        left:-2rem;
+    }
+    
+    .sub-branch:nth-child(5){
+        left: -2rem;
+    }
+
+    .sub-project0, .sub-project1, .sub-project2 {
+        left: 2rem;
+        width: 9rem;
+        top:-2rem
+    }
+
+    .sub-project3, .sub-project4 {
+        left:-9rem;
+        width: 9rem;
+        top:-2rem
+    }
     
 }

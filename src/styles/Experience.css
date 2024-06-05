@@ -5,7 +5,7 @@
 
 .experience_temp{
     padding-left:15%;
-    min-height:70vh;
+    min-height:100vh;
     padding-top: 5rem;
   }
 .experience .section-title h2{
@@ -127,3 +127,13 @@
     
 
 }
+
+@media only screen and  (max-width: 600px) {
+
+    .experience{
+     padding-left:10%;
+    }
+    .experience_temp{
+      padding-left:10%;
+    }
+   }
