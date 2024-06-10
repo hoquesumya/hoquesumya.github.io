@@ -5,6 +5,13 @@ import { useNavigate } from 'react-router-dom';
 
 export const Project = (props)=>{
 
+    let className = "project pt-5"
+
+    if (props.activeState==="Projects") {
+        className = "project_temp"
+     
+     }
+
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const navigate = useNavigate()
 
@@ -61,7 +68,7 @@ export const Project = (props)=>{
 
     return (
 
-        <div className = "project pt-5" id = "project-sec">
+        <div className = {className} id = "project-section">
             <div className="container-fluid">
             <div className="section-title">
                     <h2>Projects</h2>

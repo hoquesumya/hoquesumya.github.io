@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import {React} from 'react'
 import {Introduction} from './Intro'
 import '../styles/Body.css'
 import {About} from './About'
@@ -7,7 +7,6 @@ import { Project } from './Project'
 
 import Sparkle from 'react-sparkle'
 export const BodyElement = ({activeSection}) => {
-  //const [activeSection, setActiveSection] = useState("Home")
 
 
  return(
@@ -31,7 +30,7 @@ export const BodyElement = ({activeSection}) => {
 
 
       
-      <About image = "sumya/assests/Sumya.jpeg" activeState={activeSection}/>   
+      <About image = "assests/Sumya.jpeg" activeState={activeSection}/>   
 
       <Experience activeState={activeSection}> </Experience>  
       <Project activeSection={activeSection}></Project>
@@ -54,7 +53,7 @@ export const BodyElement = ({activeSection}) => {
       top={-20}
       />
       
-      <About image = "sumya/assests/Sumya.jpeg" activeState={activeSection}/> 
+      <About image = "assests/Sumya.jpeg" activeState={activeSection}/> 
 
       </> 
     )} 
@@ -78,6 +77,24 @@ export const BodyElement = ({activeSection}) => {
       <Experience  activeState={activeSection}/>   
       </> 
     )} 
+    {activeSection === "Projects" && (
+      <>
+      <Sparkle 
+      color={'#FFF'}
+      count={1000}
+      minSize={2}
+      maxSize={5}
+      overflowPx={1}
+      fadeOutSpeed={100}
+      newSparkleOnFadeOut={true}
+      flicker={true}
+      flickerSpeed={'normal'}
+      top={-20}
+      />
+      <Project activeState = {activeSection}></Project>
+      </>
+      
+    )}
    
     </div>  
 

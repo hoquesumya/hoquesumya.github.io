@@ -12,7 +12,12 @@
     min-height:70vh;
     
 }
+.project_temp{
+    padding-left:15%;
+    min-height:100vh;
+    padding-top: 5rem;
 
+}
 .project .section-title h2{
     font-size:50px;
     font-family:'Dancing Script',cursive;

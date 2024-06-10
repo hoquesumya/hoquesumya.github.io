@@ -53,6 +53,75 @@ export const Car = (props) =>{
         )
 
     }
+
+
+    else if (props.type === "cobra"){
+        item = (
+            <div className="carousel-inner">
+            <div className="carousel-item active">
+                 <img src="assests/cobra.jpeg" className="d-block w-100 " alt="..." />
+            </div>
+            <div className="carousel-item">
+                <img src="assests/cobra1.png" className="d-block w-100 " alt="..." />
+
+            </div>
+            <div className="carousel-item">
+                <div className='embed-responsive'  style={{height:'100%'}}>
+                    <iframe 
+                        className="embed-responsive-item d-block w-100 h-100" 
+                        src="https://www.youtube.com/embed/9MYVFQtkFRA"
+                        style={{minHeight:'20rem'}}
+                    >
+                    </iframe>
+                </div>
+            
+              
+            </div>
+        </div>
+        
+        )
+
+    }
+
+    else if (props.type === "soccer"){
+        item = (
+            <div className="carousel-inner">
+            <div className="carousel-item active">
+                 <img src="assests/soccer.png" className="d-block w-100 " alt="..." />
+            </div>
+            <div className="carousel-item">
+            <img src="assests/soccer1.png" className="d-block w-100 " alt="..." />
+
+            </div>
+            <div className="carousel-item">
+            <img src="assests/soccer2.png" className="d-block w-100 " alt="..." />
+              
+            </div>
+        </div>
+        
+        )
+
+    }
+
+    else if (props.type === "file_system"){
+        item = (
+            <div className="carousel-inner">
+            <div className="carousel-item active">
+                 <img src="assests/mypantry.png" className="d-block w-100 " alt="..." />
+            </div>
+            <div className="carousel-item">
+            <img src="assests/pantry1.png" className="d-block w-100 " alt="..." />
+
+            </div>
+            <div className="carousel-item">
+            <img src="assests/pantry2.png" className="d-block w-100 " alt="..." />
+              
+            </div>
+        </div>
+        
+        )
+
+    }
     
 
     return(

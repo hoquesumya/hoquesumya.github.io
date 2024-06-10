@@ -4,19 +4,18 @@ import { Car } from './Carosuel'
 import { useNavigate } from 'react-router-dom'
 
 
-export const Nao = () =>{
+export const Soccer= () =>{
     const navigate = useNavigate()
 
     let des = [{
         "type":"Category",
-        "element":"Robotics, Mobile App"},
+        "element":"Database, Web App"},
         {
         "type":"Technologies",
-        "element":"Choreographe, Java, Node.js, MongoDB, Alexa"
-        },
+        "element":"Python, SQL, Javascript"},
         {
             "type":"Project Date",
-            "element":"May 2021"
+            "element":"December 2023"
         },
         {
             "type":"url",
@@ -40,8 +39,8 @@ export const Nao = () =>{
 
                 <div className='row nao_des pt-2 ps-4'>
                     <div className='col-lg-8 pt-5 image_list'>
-                        <h2>Mental Health Assistant</h2>
-                        <Car type ="nao"></Car>
+                        <h2>Soccer</h2>
+                        <Car type ="soccer"></Car>
                         
                     </div>
                     <div className='col-lg-4 pt-5 project_details'>
@@ -53,7 +52,7 @@ export const Nao = () =>{
                                 if (item["element"] === "Github") {
                                     return (
                                     <li className='list-group-item bg-transparent border-0 p-0' key={index}>
-                                        <strong>{item["type"]}</strong>: <a href='https://github.com/hoquesumya/COVID19_AI_MENTAL_HEALTH_APP_FRONTEND'>{item["element"]}</a>
+                                        <strong>{item["type"]}</strong>: <a href='https://github.com/hoquesumya/cs4111-soccer/tree/sumya'>{item["element"]}</a>
                                     </li>
                                     );
                                 } else {
@@ -67,9 +66,12 @@ export const Nao = () =>{
                         }
                         </ul>
                         <p className='pt-3 pb-5'>
-                            The project is about desigining a humanoid assistive robot (NAO) in Choregraphe that can provide mental health assistance to nursing home elderlies with
-                            techniques of exercises based on validating some pre-assessments. The project also focuses on desiging an android app that will deliver the mental health assitance by intigrating
-                            IBM Watson Chatbot.
+                        ● Designed and implemented a dynamic website using Python Flask, JavaScript, and PostgreSQL database, providing users
+seamless access to soccer-related information.
+                        ● Developed a user-friendly interface using HTML, and CSS for retrieving comprehensive soccer-related details, enhancing
+                        the overall user experience
+                        ● Deployed the website on Google Cloud, leveraging cloud infrastructure for scalability, reliability, and efficient
+                        performance
                         </p>
                         </div>
 

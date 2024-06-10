@@ -1,5 +1,5 @@
 import {React} from 'react'
-import '../styles/Voting.css'
+import '../styles/All_project.css'
 import { Car } from './Carosuel'
 import { useNavigate } from 'react-router-dom'
 
@@ -25,7 +25,7 @@ export const Voting = () =>{
 
     ]
     return (
-        <div className = "voting_Project">
+        <div className = "all_Project">
              <nav className="navbar navbar-light bg-transparent">
                 <div className="container-fluid">
                     <button type="button" 

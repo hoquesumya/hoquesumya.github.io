@@ -4,19 +4,18 @@ import { Car } from './Carosuel'
 import { useNavigate } from 'react-router-dom'
 
 
-export const Nao = () =>{
+export const Cobra= () =>{
     const navigate = useNavigate()
 
     let des = [{
         "type":"Category",
-        "element":"Robotics, Mobile App"},
+        "element":"Compiler, LLVM, Programiing Language"},
         {
         "type":"Technologies",
-        "element":"Choreographe, Java, Node.js, MongoDB, Alexa"
-        },
+        "element":"OCaml, LLVM"},
         {
             "type":"Project Date",
-            "element":"May 2021"
+            "element":"May 2024"
         },
         {
             "type":"url",
@@ -40,8 +39,8 @@ export const Nao = () =>{
 
                 <div className='row nao_des pt-2 ps-4'>
                     <div className='col-lg-8 pt-5 image_list'>
-                        <h2>Mental Health Assistant</h2>
-                        <Car type ="nao"></Car>
+                        <h2>Escape Velocity For Velocity</h2>
+                        <Car type ="cobra"></Car>
                         
                     </div>
                     <div className='col-lg-4 pt-5 project_details'>
@@ -53,7 +52,7 @@ export const Nao = () =>{
                                 if (item["element"] === "Github") {
                                     return (
                                     <li className='list-group-item bg-transparent border-0 p-0' key={index}>
-                                        <strong>{item["type"]}</strong>: <a href='https://github.com/hoquesumya/COVID19_AI_MENTAL_HEALTH_APP_FRONTEND'>{item["element"]}</a>
+                                        <strong>{item["type"]}</strong>: <a href='https://github.com/hoquesumya/Cobra'>{item["element"]}</a>
                                     </li>
                                     );
                                 } else {
@@ -67,9 +66,9 @@ export const Nao = () =>{
                         }
                         </ul>
                         <p className='pt-3 pb-5'>
-                            The project is about desigining a humanoid assistive robot (NAO) in Choregraphe that can provide mental health assistance to nursing home elderlies with
-                            techniques of exercises based on validating some pre-assessments. The project also focuses on desiging an android app that will deliver the mental health assitance by intigrating
-                            IBM Watson Chatbot.
+                            Designed and developed a compiler for a programming language named "Cobra" using OCaml and LLVM. The language is buit 
+                            in the ispiration of Python and C syntax and structure such that we can build a programming 
+                            langugage that can be used in Embedded system.  
                         </p>
                         </div>
 

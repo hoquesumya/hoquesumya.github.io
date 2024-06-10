@@ -32,7 +32,7 @@ export const Introduction = () =>{
                }}
             />
             {rose && (<div id = "rose">
-               <img id="roseT" src='sumya/assests/roseT.png'></img>
+               <img id="roseT" src='assests/roseT.png'></img>
 
          <Sparkle 
     color={'#ebf054'}

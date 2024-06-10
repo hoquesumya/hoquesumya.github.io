@@ -2,6 +2,9 @@ import './App.css';
 import {Components} from './components/Components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import {Cobra}  from './components/Cobra'
+import { Soccer } from './components/Soccer';
+import { Pantry } from './components/Pantry';
 
 import { BrowserRouter, Routes, Route}  from 'react-router-dom'
 import {Nao} from './components/Nao_Project'
@@ -15,6 +18,9 @@ function App() {
         <Route path = '/' element={<Components></Components>}></Route>
         <Route path='/nao' element= {<Nao></Nao>}></Route>
         <Route path='/voting_ledger' element ={<Voting></Voting>}></Route>
+        <Route path='/cobra' element ={<Cobra></Cobra>}></Route>
+        <Route path = '/soccer_info' element={<Soccer></Soccer>}> </Route>
+        <Route path = '/my_pantry' element = {<Pantry></Pantry>}></Route>
         
       </Routes>
     </BrowserRouter>
