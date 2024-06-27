@@ -59,6 +59,9 @@
    "react-scripts": "5.0.1",
     
        
+   "react-sparkle": "^2.0.0",
+    
+       
    "three": "^0.164.1",
     
        
