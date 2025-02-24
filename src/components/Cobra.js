@@ -21,7 +21,6 @@ export const Cobra= () =>{
             "type":"url",
             "element":"Github"
         }
-
     ]
     return (
         <div className = "all_Project">
