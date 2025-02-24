@@ -74,8 +74,6 @@ if (props.activeState==="About") {
 
 
       </div>
- 
-
 
 
   )}
