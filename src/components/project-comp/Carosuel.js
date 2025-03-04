@@ -53,7 +53,19 @@ export const Car = (props) =>{
         )
 
     }
+    else if (props.type == "studyLink"){
+        item = (
+            <div className="carousel-inner">
+            <div className="carousel-item active">
+                 <img src="assests/study_summary.png" className="d-block w-100 " alt="..." />
+            </div>
+            <div className="carousel-item">
+                <img src="assests/interface.png" className="d-block w-100 " alt="..." />
 
+            </div>
+        </div>
+        )
+    }
 
     else if (props.type === "cobra"){
         item = (

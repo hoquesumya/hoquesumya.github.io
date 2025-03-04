@@ -3,10 +3,6 @@
 @tailwind utilities;
 body {
   margin: 0;
-  /*  background: #A18CD1;
-   background: -webkit-linear-gradient(top left, #A18CD1, #FBC2EC);
-   background: -moz-linear-gradient(top left, #A18CD1, #FBC2EC);
-   background: linear-gradient(to bottom right, #A18CD1, #FBC2EC);*/
     -webkit-background-clip: text;
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

@@ -4,8 +4,6 @@ import '../styles/Experience.css'
 
 export const Experience = (props) =>{
 
-
-
     let className = "experience pt-5"
 
     if (props.activeState==="Experience") {
@@ -25,9 +23,9 @@ export const Experience = (props) =>{
     ]
 
     let all_experience = [{
-                            "role_name":'Undergraduate Researcher',
+                            "role_name":'Undergraduate Research Assistant',
                             "comp-name":"Columbia University",
-                            "date": "08/2023-Present",
+                            "date": "01/2024-12/24",
                             "duty": under_grad_researcher
 
                           },
@@ -38,9 +36,7 @@ export const Experience = (props) =>{
                             "date": "08/2020-05/2021",
                             "duty": acedemic_research
                          }
-                        
                         ]
-
     let median = all_experience.length /2
 
 

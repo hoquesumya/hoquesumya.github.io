@@ -2,13 +2,14 @@ import './App.css';
 import {Components} from './components/Components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import {Cobra}  from './components/Cobra'
-import { Soccer } from './components/Soccer';
-import { Pantry } from './components/Pantry';
+import {Cobra}  from './components/project-comp/Cobra'
+import { Soccer } from './components/project-comp/Soccer';
+import { Pantry } from './components/project-comp/Pantry';
+import { StudyLink } from './components/project-comp/studyLink';
 
 import { BrowserRouter, Routes, Route}  from 'react-router-dom'
-import {Nao} from './components/Nao_Project'
-import { Voting } from './components/Voting_project';
+import {Nao} from './components/project-comp/Nao_Project'
+import { Voting } from './components/project-comp/Voting_project';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/cobra' element ={<Cobra></Cobra>}></Route>
         <Route path = '/soccer_info' element={<Soccer></Soccer>}> </Route>
         <Route path = '/my_pantry' element = {<Pantry></Pantry>}></Route>
+        <Route path = '/studyLink' element={<StudyLink></StudyLink>}></Route>
         
       </Routes>
     </BrowserRouter>

@@ -1,64 +1,71 @@
 
-
-h3 {
-
-  margin:0;
- display:inline-block;
- line-height:60%;
- font-size:7rem;
- font-weight:600;
- 
- 
+#intro{
+  opacity: 0.8;
+  font-size: 80px;
+  font-weight: 600;
 }
-
-#introduction{
-
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  padding-left:15%;
-  padding-top:12rem;
-  min-height:100vh;
+#c_program{
+  opacity: 0.3;
+  font-size: small;
+  line-height: 0%;
+  bottom: -100px;
+}
+#introduction {
+  padding-top: 2rem;
+  min-height: 100vh;
+  margin: auto;
   font-family: 'Dancing Script', cursive;
-  background: #a18cd1; /* will fall into old browser*/
-  background:linear-gradient(#a18cd1,#fbc2eb);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -webkit-linear-gradient(#a18cd1, #fbc2eb); /* Chrome 10-25, Safari 5.1-6 */
-    -webkit-background-clip:text; 
-    background-clip:text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  max-width: 95vh;
+  /* Flexbox styles for centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Optional, if you want the content to be stacked vertically */
 }
 canvas{
  width:200px !important
 }
 #intro-name{
-
-  font-size:7rem;
+  font-size:5rem;
    background-color:transparent;
-  line-height:6rem;
      
 }
 
-
-
 .name{
-
   font-weight:700;
-  font-size:7rem;
-   color: #F8EFE0 ;
+  font-size:100px;
+   color: #FBFFFF ;
  }
-
-#intro-description{
-
- 
-  font-family:'Fira code', monospace;
-  font-size:25px; 
-  padding-left:10px;
-  color:#5b3629;
-  line-height:6rem;
-  display:flex; 
-
+.name-i{
+  font-weight: 900;
+  font-family: 'Apricot', sans-serif;
 }
-
- #toogle {
+#intro-description{
+  font-family:'Fira code', monospace;
+  font-size:20px; 
+  padding-top: 10px;
+  font-weight: 500;
+  max-width: 70%;
+  color:#5b3629;
+  display:flex; 
+  animation: slideUp 4s ease-out forwards;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ #toggle {
       animation-duration: 1s;
        animation-fill-mode: both;
       animation-iteration-count: 1;
@@ -66,7 +73,7 @@ canvas{
        }
   
     
-  #toogle:hover {
+  #toggle:hover {
     /*animation-iteration-count:1;*/
     animation-name: rubberBand;
     color:#5b3629;
@@ -114,7 +121,7 @@ canvas{
   color:#5b3629;
   bottom:3rem;
   display:flex;
-   flex-direction:column;
+  flex-direction:column;
   align-items:center;
   font-size:20px;
 }
@@ -143,10 +150,11 @@ from {
 100%{
  transform:translateY(0);
 
+
 }
 }
 #email{
-  padding-left:7rem;
+  animation: slideUp 4s ease-out forwards;
 
 }
 .Email{
@@ -170,105 +178,53 @@ from {
    color:#F8EFE0;
 }
 
-@media only screen and (max-width:1100px){
-   
-  #intro-name,h3,.name{
-
-     font-size:6.5rem;
-  }
-
-}
-
-@media only screen and (max-width:700px){
-  
-   .Email{
-
-     padding:18px 30px 18px 30px;
-     font-size: 15px;
-
-    }
-   #introduction{
-     
-     padding-top:5rem;
-     
-   }
-  #intro-description{
-
-    padding-left:10px;
-    font-size:15px;
-    
-  }
-  #intro-name,h3,.name{
-
-     font-size:4.5rem;
-  }
-
-}
-@media only screen and (max-width:499px)
-{
-   #email{
-
-      padding-left:3rem;
-      padding-top:1rem;
-    }
-   #introduction{
-     padding-top:5rem;
-     padding-left:10%;
-   }
-  #intro-description{
-    font-size:16px;
-    padding-left:10px;
-    line-height:2.5rem;
-  }
-  #intro-name,h3,.name{
-
-      font-size:3rem;
-     line-height:3.5rem;
-  }
-
- }
- #rose{
-  left:55%;
-  position: absolute;
-  top:24%;
-  transform: rotate(30deg);
-  width: 10%;
- }
- #roseT {
-  width: 100%;
-  opacity: 0.2;
-  animation: moveToLeft 5s;
-  transform-style: preserve-3d;
-}
-
-@keyframes moveToLeft {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    opacity: 0.6;
-    transform: rotate3d(1, 1, 0, 180deg) translateZ(50px); /* Rotate around a diagonal axis in 3D space and add depth */
-  }
-  50% {
-    opacity: 0.5;
-    transform: rotate3d(1, 1, 0, -180deg) translateZ(-50px); /* Rotate back around the diagonal axis in 3D space and add depth */
-  }
-  75% {
-    opacity: 0.4;
-    transform: scale(3.33) translateZ(0); /* Scale the element */
-  }
-  100% {
-    opacity: 0.2;
-    transform: scale(1) translateY(0) translateZ(0); /* Reset transformations */
+/* Large devices (max-width: 1100px) */
+@media only screen and (max-width: 1100px) {
+  #intro-name, h3, .name {
+    font-size: 6.5rem;
   }
 }
-@media only screen and  (max-width: 600px) {
 
- #introduction{
+/* Medium devices (max-width: 700px) */
+@media only screen and (max-width: 700px) {
+  .Email {
+    padding: 18px 30px;
+    font-size: 15px;
+  }
 
-  padding-top:15rem;
-  min-height:80vh;
-  padding-left:10%;
- }
+  #intro-description {
+    padding-left: 10px;
+    font-size: 15px;
+  }
 
+  #intro-name, h3, .name {
+    font-size: 4.5rem;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  #introduction {
+    min-height: 80vh;
+  }
+
+  #intro {
+    font-size: 60px;
+  }
+}
+
+/* Small devices (max-width: 499px) */
+@media only screen and (max-width: 499px) {
+  #intro-description {
+    font-size: 10px;
+    padding-left: 10px;
+  }
+
+  #intro-name, h3, .name {
+    font-size: 3rem;
+  }
+  #intro {
+    font-size: 40px;
+  }
+}
+
+/* Extra Small devices (max-width: 600px) */

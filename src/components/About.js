@@ -31,9 +31,8 @@ if (props.activeState==="About") {
           <div className = "main_about">
          
              <div id = "about_des">
-                <p> I am currently a third-year Computer Science student at Columbia University. I graduted from City University of New York with A.S in Computer Science.<br/> Besides of studying, I love to read books and explore new placesand cook new foods in my free times. I am also fond of working out, lifting weights. </p>
+                <p> I am currently a senior in Computer Science student at Columbia University. I graduted from City University of New York with A.S in Computer Science.<br/> Besides of studying, I love to explore new places and cook new foods in my free times. I am also fond of working out, lifting weights. </p>
                     <p> Here is a few technologies I have been working with: </p> 
-
              </div>
              
              <div id = "my_image" >

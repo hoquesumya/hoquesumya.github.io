@@ -9,6 +9,7 @@
 }
 .project{
     padding-left:15%;
+    padding-right: 15%;
     min-height:70vh;
     
 }
@@ -263,4 +264,10 @@
         top:-2rem
     }
     
+}
+.project-main{
+    width: 100%;
+}
+.card-main{
+    background-color: #ed5393;
 }
