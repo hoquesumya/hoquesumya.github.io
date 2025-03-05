@@ -43,8 +43,8 @@ flex-direction:row;
 font-family:'Fira code', monospace;
   /* Created with https://www.css-gradient.com */
 background: #A18CD1;
-background: -webkit-linear-gradient(top left, #A18CD1, #FBC2EC);
-background: -moz-linear-gradient(top left, #A18CD1, #FBC2EC);
+background: -webkit-linear-gradient(to top right, #ADEDC2, #C4F4F9, #A18CD1, #FF6F61);
+background: -moz-linear-gradient(to top right, #ADEDC2, #C4F4F9, #A18CD1, #FF6F61);
 background: linear-gradient(to top right, #ADEDC2, #C4F4F9, #A18CD1, #FF6F61);
 
 /*background:  linear-gradient(to top right, #BA1CBE, #D4BEDE, #3BA9E1,  #3091F6);*/
