@@ -37,9 +37,10 @@ export const Project = (props)=>{
 
     {
         "image_name":"cobra",
-        "image_src":"assests/cobra.jpeg",
+        "image_src":"assests/cobra.png",
         "tools":"OCaml, LLVM",
          "title": "Cobra",
+         "color":"linear-gradient(to right,#606c88,#3f4c6b",
          "text": "A compiler for a programming language named Cobrausing OCaml and LLVM"
     },
     
