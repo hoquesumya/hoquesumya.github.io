@@ -31,6 +31,13 @@ export const Car = (props) =>{
                 </div>
             
             </div>
+            <div className="carousel-item">
+                <div className='embed-responsive'  style={{height:'100%'}}>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmmDcOW_ZE8?si=bdk460DWBU6RFWmp"></iframe>
+
+                </div>
+            
+            </div>
         </div>
         )
     }
@@ -133,6 +140,20 @@ export const Car = (props) =>{
         
         )
 
+    }
+    else if (props.type === "mrt") {
+        item = (
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <iframe 
+                        width="600" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/Yi4qBSmEP_c?si=8JWCT1kG9R7wtzDV" 
+                        title="MRT Video"
+                    ></iframe>
+                </div>
+            </div>
+        );
     }
     
 
