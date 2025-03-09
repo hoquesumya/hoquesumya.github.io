@@ -96,7 +96,6 @@ export const Project = (props)=>{
 
 
     return (
-
         <div className = {className } id = "project-section">
            
             <div className="section-title">

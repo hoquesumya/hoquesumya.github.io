@@ -52,7 +52,7 @@ export const Nao = () =>{
                                 if (item["element"] === "Github") {
                                     return (
                                     <li className='list-group-item bg-transparent border-0 p-0' key={index}>
-                                        <strong>{item["type"]}</strong>: <a href='https://github.com/hoquesumya/COVID19_AI_MENTAL_HEALTH_APP_FRONTEND'>{item["element"]}</a>
+                                        <strong>{item["type"]}</strong>: <a href='https://github.com/hoquesumya/Covi19-Mental-Health'>{item["element"]}</a> 
                                     </li>
                                     );
                                 } else {
